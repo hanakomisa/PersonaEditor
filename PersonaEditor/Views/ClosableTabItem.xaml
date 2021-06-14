@@ -7,8 +7,8 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <TabItem Name="Tab">
         <TabItem.Header>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Height="20" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="NoWrap">Name</TextBlock>
+            <StackPanel Orientation="Horizontal" Background="#FF404040">
+                <TextBlock Height="20" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="NoWrap" Foreground="White">Name</TextBlock>
                 <Button Width="20" Height="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">x</Button>
             </StackPanel>
         </TabItem.Header>

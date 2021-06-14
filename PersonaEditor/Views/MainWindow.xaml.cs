@@ -8,5 +8,10 @@ namespace PersonaEditor.Views
         {
             InitializeComponent();
         }
+
+        private void MultiFileEdit_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

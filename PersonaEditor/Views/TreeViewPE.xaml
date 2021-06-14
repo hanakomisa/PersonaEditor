@@ -15,7 +15,7 @@
         <converter:SecondArgTranslator x:Key="SecondArg"/>
     </UserControl.Resources>
 
-    <TreeView ItemsSource="{Binding Tree}">
+    <TreeView ItemsSource="{Binding Tree}" Background="#FF404040" Foreground="White">
         <TreeView.ItemTemplate>
             <HierarchicalDataTemplate ItemsSource="{Binding Path=SubItems}">
                 <prim:EditableTextBlock IsEnabled="{Binding IsEnable}" Text="{Binding Path=Header}" Edit="{Binding Path=Edit}" AllowDrop="True">

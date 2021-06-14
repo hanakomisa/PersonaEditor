@@ -11,19 +11,19 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StatusBar Grid.Row="0">
-            <Button Content="{DynamicResource main_Background}" Command="{Binding SelectBack}"/>
+        <StatusBar Grid.Row="0" Background="#FF505050">
+            <Button Content="{DynamicResource main_Background}" Command="{Binding SelectBack}" Background="#FF606060" Foreground="White"/>
             <CheckBox IsChecked="True"
                       Checked="CheckBox_Checked"
                       Unchecked="CheckBox_Unchecked"
-                      Content="Border"/>
+                      Content="Border" Foreground="White"/>
         </StatusBar>
         <controls:ZoomScrollViewer x:Name="ScrollViewer"
                                    x:FieldModifier="private"
                                    Grid.Row="1"
                                    CanContentScroll="True"
                                    VerticalScrollBarVisibility="Visible"
-                                   HorizontalScrollBarVisibility="Visible">
+                                   HorizontalScrollBarVisibility="Visible" Background="#FF404040" Foreground="White">
             <controls:ZoomPresenter>
                 <Border x:Name="MainBorder"
                         x:FieldModifier="private"

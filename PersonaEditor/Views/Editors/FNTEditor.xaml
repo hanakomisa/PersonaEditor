@@ -6,7 +6,7 @@
              xmlns:wpfcontrol="clr-namespace:AuxiliaryLibraries.WPF.Controls;assembly=AuxiliaryLibraries.WPF"
              mc:Ignorable="d" d:DesignHeight="432" d:DesignWidth="788">
 
-    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+    <Grid Background="#FF404040">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="5"/>
@@ -16,7 +16,7 @@
         <ListBox ItemsSource="{Binding GlyphCuts}"
                  SelectedItem="{Binding SelectedItem, Mode=OneWayToSource}" 
                  SelectionMode="Single"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="#FF404040" Foreground="White">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>

@@ -32,28 +32,28 @@
         </wpf:EventTrigger>
     </wpf:Interaction.Triggers>
 
-    <Grid>
+    <Grid Background="#FF606060">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Menu Grid.Row="0">
-            <MenuItem Header="{DynamicResource main_File}">
-                <MenuItem Header="{DynamicResource main_OpenFile}" Command="{Binding Path=clickOpenFile}"/>
-                <MenuItem Header="{DynamicResource main_SaveAs}" Command="{Binding Path=clickSaveAsFile}"/>
+        <Menu Grid.Row="0" Background="#FF606060" Foreground="White">
+            <MenuItem Header="{DynamicResource main_File}" Background="#FF606060">
+                <MenuItem Header="{DynamicResource main_OpenFile}" Command="{Binding Path=clickOpenFile}" Background="#FF606060" Foreground="White"/>
+                <MenuItem Header="{DynamicResource main_SaveAs}" Command="{Binding Path=clickSaveAsFile}" Background="#FF606060" Foreground="White"/>
             </MenuItem>
-            <MenuItem Header="{DynamicResource main_Tools}">
-                <MenuItem Header="{DynamicResource main_Visualizer}" Command="{Binding Path=clickVisualizerOpen}"/>
-                <MenuItem Header="{DynamicResource main_CharSet}" Command="{Binding Path=clickSetCharOpen}"/>
+            <MenuItem Header="{DynamicResource main_Tools}" Background="#FF606060">
+                <MenuItem Header="{DynamicResource main_Visualizer}" Command="{Binding Path=clickVisualizerOpen}" Background="#FF606060" Foreground="White"/>
+                <MenuItem Header="{DynamicResource main_CharSet}" Command="{Binding Path=clickSetCharOpen}" Background="#FF606060" Foreground="White"/>
                 <Separator/>
-                <MenuItem Header="{DynamicResource main_Settings}" Command="{Binding Path=clickSettingOpen}"/>
+                <MenuItem Header="{DynamicResource main_Settings}" Command="{Binding Path=clickSettingOpen}" Background="#FF606060" Foreground="White"/>
             </MenuItem>
-            <MenuItem Header="{DynamicResource main_About}" Command="{Binding Path=clickAboutOpen}"/>
+            <MenuItem Header="{DynamicResource main_About}" Command="{Binding Path=clickAboutOpen}" Background="#FF606060"/>
         </Menu>
         <Separator Grid.Row="1"/>
 
-        <controls:MultiFileEdit DataContext="{Binding MultiFile}" Grid.Row="2"/>
+        <controls:MultiFileEdit DataContext="{Binding MultiFile}" Grid.Row="2" Background="#FF606060" Foreground="White"/>
     </Grid>
 </Window>

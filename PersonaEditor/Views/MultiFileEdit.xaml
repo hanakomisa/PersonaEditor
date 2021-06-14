@@ -45,20 +45,20 @@
                                 </wpf:EventTrigger.Actions>
                             </wpf:EventTrigger>
                         </wpf:Interaction.Triggers>
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="{DynamicResource main_DropFile}" TextAlignment="Center"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="{DynamicResource main_DropFile}" TextAlignment="Center" Foreground="White"/>
                     </Grid>
                 </Border>
                 <StatusBar Grid.Row="2">
-                    <StatusBarItem>
+                    <StatusBarItem Background="#FF606060">
                         <TextBlock Text="{Binding StatusBar}"/>
                     </StatusBarItem>
                 </StatusBar>
             </Grid>
 
-            <GridSplitter ResizeBehavior="PreviousAndCurrent" ShowsPreview="True" Grid.Column="1" Width="4"/>
+            <GridSplitter ResizeBehavior="PreviousAndCurrent" ShowsPreview="True" Grid.Column="1" Width="4" Background="#FF606060" Foreground="White"/>
         </Grid>
 
-        <controls:PreviewEditorTabControl Grid.Column="1" DataContext="{Binding Tab}"/>
+        <controls:PreviewEditorTabControl Grid.Column="1" DataContext="{Binding Tab}" Background="#FF404040" Foreground="White"/>
 
         <!--<Grid Grid.Column="2">
             <Grid.ColumnDefinitions>

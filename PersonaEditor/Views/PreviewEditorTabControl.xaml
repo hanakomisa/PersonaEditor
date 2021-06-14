@@ -30,7 +30,7 @@
         </wpf:EventTrigger>
     </wpf:Interaction.Triggers>
     
-    <TabControl Grid.Column="0" SelectedIndex="{Binding SelectedTabIndex}" HorizontalContentAlignment="Stretch" ItemsSource="{Binding TabCollection}">
+    <TabControl Grid.Column="0" SelectedIndex="{Binding SelectedTabIndex}" HorizontalContentAlignment="Stretch" ItemsSource="{Binding TabCollection}" Background="#FF404040" Foreground="White" BorderBrush="#00000000">
         <TabControl.ItemTemplate>
             <DataTemplate>
                 <Grid>

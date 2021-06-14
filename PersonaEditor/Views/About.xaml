@@ -6,20 +6,20 @@
         mc:Ignorable="d"
         Title="{DynamicResource main_About}" Height="170" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
 
-    <Grid>
+    <Grid Background="#FF404040">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <StackPanel Margin="5" Grid.Row="0">
-            <TextBlock Text="PersonaEditorGUI"/>
+            <TextBlock Text="PersonaEditorGUI" Foreground="White"/>
             <TextBlock>
                     <Hyperlink NavigateUri="https://github.com/Meloman19/PersonaEditor" RequestNavigate="Hyperlink_RequestNavigate">
                         https://github.com/Meloman19/PersonaEditor
                     </Hyperlink>
             </TextBlock>
             <TextBlock></TextBlock>
-            <TextBlock Text="Partially based on Amicitia"/>
+            <TextBlock Text="Partially based on Amicitia" Foreground="White"/>
             <TextBlock>
                     <Hyperlink NavigateUri="https://github.com/TGEnigma/Amicitia"  RequestNavigate="Hyperlink_RequestNavigate">
                         https://github.com/TGEnigma/Amicitia
@@ -27,6 +27,6 @@
             </TextBlock>
         </StackPanel>
 
-        <Button Content="OK" Grid.Row="1" Click="Button_Click" Width="50" Margin="4"/>
+        <Button Content="OK" Grid.Row="1" Click="Button_Click" Width="50" Margin="4" Foreground="White" Background="#FF606060"/>
     </Grid>
 </Window>
